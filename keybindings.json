@@ -1,0 +1,139 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "q",
+        "command": "editor.closeTestPeek",
+        "when": "testing.isInPeek && !config.editor.stablePeek || testing.isPeekVisible && !config.editor.stablePeek && vim.mode == 'Normal'"
+    },
+    {
+        "key": "K",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    // Navigate between editor panes (groups)
+    {
+        "key": "ctrl+w left",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+w right",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+w up",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+w down",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    // Show code action information by ctrl+space
+    {
+        "key": "ctrl+space",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Rebind the ctrl+p and ctrl+t keys to work with Vim
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.showAllSymbols",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    // Navigate between side bar views
+    {
+        "key": "ctrl+w down",
+        "command": "workbench.action.nextSideBarView",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+w up",
+        "command": "workbench.action.previousSideBarView",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+w w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    // Goto next error 
+    {
+        "key": "ctrl+g e",
+        "command": "editor.action.marker.nextInFiles",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Toggle the terminal
+    {
+        "key": "alt+i",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // Focus Explorer
+    {
+        "key": "ctrl+w e",
+        "command": "workbench.view.explorer"
+    },
+    // Move focus back to the editor from Explorer
+    {
+        "key": "ctrl+w enter",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletVisible"
+    },
+    // Create a horizontal split (new editor below)
+    {
+        "key": "ctrl+w s",
+        "command": "workbench.action.splitEditorDown"
+    },
+    // Create a vertical split (new editor to the right)
+    {
+        "key": "ctrl+w v",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "alt+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && !inputFocus"
+    },
+    {
+        "key": "alt+t",
+        "command": "testing.runAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+oem_1 c",
+        "command": "-testing.runAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+d",
+        "command": "testing.debugAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+oem_1 ctrl+c",
+        "command": "-testing.debugAtCursor",
+        "when": "editorTextFocus"
+    }
+]

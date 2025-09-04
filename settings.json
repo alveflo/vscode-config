@@ -1,0 +1,177 @@
+{
+    "azureResourceManagerTools.parameterFiles": {
+        "c:\\dev\\application.careermodel\\deploy\\application.careermodel.resourcegroup\\api\\apideploy.json": "apideploy.parameters.json",
+        "c:\\dev\\application.careermodel\\deploy\\application.careermodel.resourcegroup\\functions\\functionsdeploy.json": "functionsdeploy.parameters.json",
+        "c:\\dev\\application.careermodel\\deploy\\application.careermodel.resourcegroup\\database\\databaseazuredeploy.json": "databaseazuredeploy.parameters.json",
+        "c:\\dev\\delegations\\deployment\\database\\databaseazuredeploy.json": "databaseazuredeploy.parameters.json",
+        "c:\\dev\\application.employmentcontract\\deploy\\application.employmentcontract.resourcegroup\\api\\apideploy.json": "apideploy.parameters.json",
+        "c:\\dev\\application.employmentcontract\\deploy\\application.employmentcontract.resourcegroup\\functions\\functionsdeploy.json": "functionsdeploy.parameters.json",
+        "c:\\dev\\masterdata.organization\\deploy\\md.organization.resourcegroup\\webapp\\webappdeploy.json": "webappdeploy.parameters.json"
+    },
+    "workbench.colorTheme": "Default Dark+",
+    "dev.containers.dockerPath": "podman",
+    "editor.fontFamily": "CaskaydiaCove Nerd Font, Cascadia Mono, Consolas, 'Courier New', monospace",
+    "editor.cursorBlinking": "solid",
+    "files.autoGuessEncoding": true,
+    "workbench.iconTheme": "vscode-icons",
+    "terminal.integrated.allowChords": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.navigateLeft",
+        "workbench.action.navigateRight",
+        "workbench.action.navigateUp",
+        "workbench.action.navigateDown"  
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["å"],
+            "after": ["{"]
+        },
+        {
+            "before": ["ä"],
+            "after": ["}"]
+        },
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": [
+                "<Right>"
+            ],
+            "commands": [
+                "cursorRight"
+            ],
+            "when": "vim.mode == 'Normal' && editorTextFocus"
+        },
+        {
+            "before": [
+                "<Left>"
+            ],
+            "commands": [
+                "cursorLeft"
+            ],
+            "when": "vim.mode == 'Normal' && editorTextFocus"
+        },
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "<C-Up>"
+            ],
+            "commands": [
+                "scrollLineUp"
+            ]
+        },
+        {
+            "before": [
+                "<C-Down>"
+            ],
+            "commands": [
+                "scrollLineDown"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Right>"
+            ],
+            "commands": [
+                "cursorRight"
+            ],
+            "when": "vim.mode == 'Insert' && editorTextFocus"
+        },
+        {
+            "before": [
+                "<Left>"
+            ],
+            "commands": [
+                "cursorLeft"
+            ],
+            "when": "vim.mode == 'Insert' && editorTextFocus"
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Right>"
+            ],
+            "commands": [
+                "cursorRight"
+            ],
+            "when": "vim.mode == 'Visual' && editorTextFocus"
+        },
+        {
+            "before": [
+                "<Left>"
+            ],
+            "commands": [
+                "cursorLeft"
+            ],
+            "when": "vim.mode == 'Visual' && editorTextFocus"
+        }
+    ],
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-r>": false,
+        "<Backspace>": false,
+    },
+    "vim.relativenumber": true,
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell_7": {
+            "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+            "icon": "terminal-powershell"
+        }, // ...
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell_7",
+    // "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.lineNumbers": "relative",
+    "rubyLsp.rubyExecutablePath": "c:\\Ruby34-x64\\bin\\ruby.exe",
+    "workbench.navigationControl.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "window.menuBarVisibility": "compact",
+}
