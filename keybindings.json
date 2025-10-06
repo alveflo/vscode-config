@@ -1,6 +1,18 @@
 // Place your key bindings in this file to override the defaults
 [
     {
+        "key": "ctrl+w e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+w t",
+        "command": "workbench.view.testing.focus"
+    },    
+    {
+        "key": "ctrl+w x",
+        "command": "workbench.view.extensions"
+    },
+    {
         "key": "q",
         "command": "editor.closeTestPeek",
         "when": "testing.isInPeek && !config.editor.stablePeek || testing.isPeekVisible && !config.editor.stablePeek && vim.mode == 'Normal'"
