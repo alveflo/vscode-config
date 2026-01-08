@@ -4,8 +4,7 @@
     "workbench.editor.showTabs": "multiple",
     "workbench.statusBar.visible": true,
     "workbench.startupEditor": "none",
-    "breadcrumbs.enabled": false,
-    "material-icon-theme.hidesExplorerArrows": false,
+    "material-icon-theme.hidesExplorerArrows": true,
 
     // Custom ui style 
     "custom-ui-style.stylesheet": {
@@ -14,15 +13,18 @@
     
     // Disable blinking cursor
     "editor.cursorBlinking": "solid", 
-    "window.titleBarStyle": "custom",
+    // Format on save 
+    //"window.titleBarStyle": "custom",
     "terminal.integrated.allowChords": true,
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.navigateLeft",
         "workbench.action.navigateRight",
         "workbench.action.navigateUp",
-        "workbench.action.navigateDown"  
+        "workbench.action.navigateDown",
+        "workbench.action.decreaseViewSize",
+        "workbench.action.increaseViewSize"
     ],
-
+    "terminal.integrated.stickyScroll.enabled": false,
     // Vim settings
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -40,6 +42,12 @@
             ],
             "commands": [
                 "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": ["g","r"],
+            "commands": [
+                "editor.action.goToReferences"
             ]
         },
         {
@@ -92,6 +100,22 @@
             ],
             "commands": [
                 "scrollLineDown"
+            ]
+        },
+        {
+            "before": [
+                "Space", "f", "f"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            "before": [
+                "Space", "x"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
             ]
         }
     ],
@@ -163,7 +187,53 @@
         "vscodevim.vim": 1
     },
     "editor.minimap.enabled": false,
+    // Smoth editor cursor animation
+    "editor.cursorSmoothCaretAnimation": "on",
     "github.copilot.nextEditSuggestions.enabled": true,
     "editor.lineNumbers": "relative",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "window.menuBarVisibility": "compact",
+    "chat.commandCenter.enabled": false,
+    "window.commandCenter": false,
+    "[csharp]": {
+        "editor.maxTokenizationLineLength": 2500,
+        "editor.formatOnType": true,
+        "editor.semanticHighlighting.enabled": true,
+        "editor.defaultFormatter": "csharpier.csharpier-vscode",
+        "editor.formatOnSave": true,
+    },
+    //"workbench.panel.defaultLocation": "right",
+    "material-icon-theme.saturation": 1,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+    },
+
+    "coverage-gutters.coverageFileNames": [
+        "lcov.info",
+        "cov.xml",
+        "coverage.xml",
+        "cobertura.xml",
+        "jacoco.xml",
+        "coverage.cobertura.xml"
+],
+"catppuccin.italicKeywords": false,
+"catppuccin.italicComments": false,
+"[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"extensions.ignoreRecommendations": true,
+"terminal.integrated.tabs.enabled": false,
+"[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
 }
+
