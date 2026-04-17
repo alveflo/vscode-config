@@ -4,6 +4,7 @@
     "workbench.editor.showTabs": "multiple",
     "workbench.statusBar.visible": true,
     "workbench.startupEditor": "none",
+    "workbench.editor.centeredLayoutAutoResize": false,
     "material-icon-theme.hidesExplorerArrows": true,
 
     // Custom ui style 
@@ -140,6 +141,15 @@
         }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
+
+        {
+            "before": ["å"],
+            "after": ["{"]
+        },
+        {
+            "before": ["ä"],
+            "after": ["}"]
+        },
         {
             "before": [
                 "<Right>"
@@ -189,6 +199,8 @@
     "editor.minimap.enabled": false,
     // Smoth editor cursor animation
     "editor.cursorSmoothCaretAnimation": "on",
+    // Smooth editor scroll animation
+    // "editor.smoothScrolling": true,
     "github.copilot.nextEditSuggestions.enabled": true,
     "editor.lineNumbers": "relative",
     "workbench.iconTheme": "material-icon-theme",
@@ -235,5 +247,12 @@
 "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
 },
+"chat.tools.terminal.autoApprove": {
+    "dotnet build": true,
+    "dotnet test": true,
+    "pnpm": true,
+    "npx": true
+},
+"chat.viewSessions.orientation": "stacked",
 }
 
