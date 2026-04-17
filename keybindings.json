@@ -66,6 +66,14 @@
     "command": "workbench.action.navigateDown"
   },
   {
+    "key": "ctrl+w m left",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+w m right",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
     "key": "ctrl+w x",
     "command": "workbench.action.closeGroup"
   },
